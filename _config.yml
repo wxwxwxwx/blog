@@ -6,11 +6,11 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Nangka
-email: your@mail.com
+title: wxwxwxwx
+email: 97677613@qq.com
 description: > # this means to ignore newlines until "baseurl:"
   Welcome to my awesome blog.
-baseurl: "/nangka" # the subpath of your site, e.g. /blog
+baseurl: "/blog" # the subpath of your site, e.g. /blog
 permalink : '/:year/:title'
 url: "" # the base hostname & protocol for your site
 twitter:
@@ -21,7 +21,7 @@ facebook:
 google_plus: #gplus id or username
 
 # Optional settings
-github: #your github username
+github: wxwxwxwx
 linkedin: #linkedin username
 disqus_username: #Your disqus_username to add comments on the post
 google_analytics: #your GA unique id (UA-xxxxxxxx-x)
