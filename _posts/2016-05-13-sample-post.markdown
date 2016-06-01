@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "about jekyll"
-date:   2016-6-01 19:40:02 +0700
+date:   2016-06-01 19:40:02 +0700
 categories: jekyll update
 ---
 # 关于在windows上搭建jekyll
