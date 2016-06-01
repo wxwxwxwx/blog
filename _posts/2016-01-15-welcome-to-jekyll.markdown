@@ -8,6 +8,6 @@ Today is the first day I create this own blog, later I will be here to write dow
 
 
 
-[jekyll-docs]: http://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+<!-- [jekyll-docs]: http://jekyllrb.com/docs/home -->
+<!-- [jekyll-gh]:   https://github.com/jekyll/jekyll -->
+<!-- [jekyll-talk]: https://talk.jekyllrb.com/ -->
