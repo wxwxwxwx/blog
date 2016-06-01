@@ -18,12 +18,12 @@ categories: jekyll update
 在windows下，可以使用$ Ruby install安装
 
 ruby安装说明：
-html```
+```html
 http://www.ruby-lang.org/zh_cn/downloads/
 ```
 
 ruby安装下载(windows)
-html```
+```html
 http://rubyinstaller.org/downloads/
 ```
 
