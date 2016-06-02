@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "zepto.js 简述"
+date:   2016-06-01 08:18:02 +0700
+categories: jekyll update
+---
+
+#  zepto.js
+
+Zepto极简现代浏览器的JavaScript库是一个主要的API。如果你使用jQuery,你已经知道如何使用Zepto。
+
+
+当我们在处理一些项目的时候，对jQuery没有硬性要求，只需要简单的使用，这是我们就可以引入zepto.js
+
+他和jquery是水火不相容的，两个中，我们只能引入一个。但是两者用法基本相同。
