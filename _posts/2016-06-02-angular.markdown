@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Angular.js"
-date:   2016-06-02 08:18:02 +0700
+title:  "Angular.js 简述"
+date:   2016-06-01 08:18:02 +0700
 categories: jekyll update
 ---
 
