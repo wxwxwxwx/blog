@@ -7,3 +7,67 @@ categories: jekyll update
 
 
 AngularJS是为了克服HTML在构建应用上的不足而设计的。HTML是一门很好的为静态文本展示设计的声明式语言，但要构建WEB应用的话它就显得乏力了。所以我做了一些工作（你也可以觉得是小花招）来让浏览器做我想要的事。
+
+
+# 安装
+
+* $ bower install angular
+
+# 写法
+
+```HTML
+
+<!DOCTYPE html>
+<html lang="en" ng-app="Stu">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link href="http://cdn.bootcss.com/materialize/0.97.5/css/materialize.css" rel="stylesheet">
+  <script src="angular/angular.js"></script>
+  <script src="angular-animate/angular-animate.js"></script>
+</head>
+<body ng-controller="mainC">
+<input type="text" ng-model="info">
+<p>{{info}}</p>
+<h1>{{num}}</h1>
+
+
+<button ng-click="change()">update</button>
+</body>
+<script>
+  var aa = angular.module('Stu',[]);
+  aa.controller('mainC',['$scope',function($scope){
+    $scope.num = Math.random();
+    $scope.change = function(){
+      $scope.num = Math.random();
+    }
+    console.dir($scope)
+  }])
+</script>
+</html>
+
+
+```
+
+# ng-
+
+> ng-xxx 不是属性，是表达式；
+
+* ng-app:指令告诉Angular 应该管理页面中的哪一块。如果你正在构建一款纯Angular 应用，那么你应该把ng-app 指令写在<html> 标签中.
+* ng-controller:开启控制模块，只能控制模块内的元素;
+
+
+* ng-repeat;(v in array)
+* ng-class;{'red',$index%2===0}如果条件成立，则为元素添加red属性
+* ng-if;如果传入参数为true,则显示。false则移除；
+* ng-hide;如果参数为true，则隐藏；
+* ng-show;如果参数为true，则显示；
+
+### 变量
+
+* $index;
+* $first;
+* $last;
+* $even;
+* $odd;
+* $middle;
