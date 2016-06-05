@@ -82,6 +82,9 @@ aa.controller('mainC',['$scope',function($scope){}]
 * ng-init;
 
 如需要一个toggle变量，则在元素中写ng-init="toggle=false";即可省略去$scope中定义toggle；
+```html
+<nav ng-click="toggle=!toggle" ng-init="toggle=false" ng-class={'red':toggle}>
+```
 
 ### 变量
 
