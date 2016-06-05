@@ -49,6 +49,22 @@ AngularJS是为了克服HTML在构建应用上的不足而设计的。HTML是一
 
 ```
 
+
+
+注意：
+1.在angular中不可以使用if 和 for 循环
+2.{{}}是 ng-bind的简写
+
+
+
+```javaascript
+var aa = angular.module('Stu',[]);
+aa.controller('mainC',['$scope',function($scope){}]
+```
+
+第一个[]为依赖注入
+第二个[]为注入内置服务
+
 # ng-
 
 > ng-xxx 不是属性，是表达式；
@@ -62,6 +78,10 @@ AngularJS是为了克服HTML在构建应用上的不足而设计的。HTML是一
 * ng-if;如果传入参数为true,则显示。false则移除；
 * ng-hide;如果参数为true，则隐藏；
 * ng-show;如果参数为true，则显示；
+
+* ng-init;
+
+如需要一个toggle变量，则在元素中写ng-init="toggle=false";即可省略去$scope中定义toggle；
 
 ### 变量
 
