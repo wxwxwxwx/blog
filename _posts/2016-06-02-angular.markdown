@@ -201,3 +201,59 @@ aa.controller('mainC',['$scope',function($scope){
 
 
 ```
+
+
+# 动画
+.ng-hide
+.ng-add
+.ng-remove
+.ng-enter
+.ng-enter-active
+.ng-leave
+.ng-leave-active
+
+
+# 指令
+> 理解组建型指令：以组件化开发 '复用'
+
+```javaascript
+name.directive('ngAaa',[function(){
+  return {
+    restrict:
+    replace:
+    templateUrl:
+    template:
+    link:
+  }
+})]
+//在link中使用jquery
+```
+
+
+
+
+```html
+<!-- 必须在服务器上启动，不可用file协议 -->
+<uq-title></uq-title>
+
+<uq-tab-bar></uq-tab-bar>
+
+var aa = angular.module('test',[]);
+aa.controller('mainC',['$scope',function($scope){
+  $scope.title="微信"
+}])
+aa.directive('uqTitle',function(){
+  return {
+    restrict:'E',
+    templateUrl:'views/uq-title.html',
+  }
+}).directive('uqTabBar',function(){
+  return {
+    restrict:'E',
+    templateUrl:'views/uq-tab-bar.html',
+  }
+})
+
+```
+
+# 路由
