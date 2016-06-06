@@ -60,7 +60,12 @@ AngularJS是为了克服HTML在构建应用上的不足而设计的。HTML是一
 ```javaascript
 var aa = angular.module('Stu',[]);
 aa.controller('mainC',['$scope',function($scope){}]
+<!-- 动画 -->
+var test = angular.module('test',['ngAnimate'])
+
 ```
+
+
 
 第一个[]为依赖注入
 第二个[]为注入内置服务
@@ -94,3 +99,105 @@ aa.controller('mainC',['$scope',function($scope){}]
 * $even;
 * $odd;
 * $middle;
+
+
+# angular-animate
+
+* ng-if/ng-show/ng-hide都用一个类
+
+>ng-hide
+
+
+* ng-repeat
+
+> .ng-enter
+
+>.ng-enter-active
+
+>.ng-leave
+
+>.ng-leave-active
+
+
+```html
+<!DOCTYPE html>
+<html lang="en" ng-app="test">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link href="https://cdn.bootcss.com/materialize/0.97.5/css/materialize.css" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="css/index.css"> -->
+  <style>
+
+  .nav{
+    transition: all 1s ease;
+
+
+    /*transform: translate(0);*/
+  }
+  .nav.ng-hide{
+    /*transform: translateX(-90%);*/
+    opacity: 0;
+  }
+
+
+
+  .lists.ng-leave,.lists.ng-enter{
+    transition: all 1s ease;
+  }
+  .lists.ng-leave{
+    background:#ccc;
+  }
+  .lists.ng-leave-active,.lists.ng-enter{
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  .lists.ng-enter-active{
+    opacity: 1;
+    transform: translateX(0);
+    background: #ccc;
+  }
+
+  </style>
+</head>
+<body ng-controller="mainC">
+  <nav class="nav pink" ng-click="toggle=!toggle" ng-hide="toggle"></nav>
+  <nav class="nav yellow" ng-show="toggle" ng-click="toggle=!toggle"></nav>
+  <section class="container row">
+    <section class="list striped s12" >
+      <li class="lists" ng-repeat="v in list" style="height:50px""><a style="margin-right:100px;margin-bottom:30px;">{{v}}</a><a class="btn right" ng-click="deleteL($index)">X</a></li>
+      <span class="btn purple" ng-click="addL()">add</span>
+    </section>
+  </section>
+</body>
+<script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.js"></script>
+<script src="angular/angular.js"></script>
+<script src="angular-animate/angular-animate.js"></script>
+<script src="angular-route/angular-route.js"></script>
+<script src="angular-touch/angular-touch.js"></script>
+<script>
+var aa = angular.module('test',['ngAnimate']);
+aa.controller('mainC',['$scope',function($scope){
+  $scope.num = 4
+  $scope.toggle = false;
+  $scope.list = [
+    'a','b','c'
+  ]
+  $scope.deleteL = function(id){
+    $scope.list = $scope.list.filter(function(v,i){
+      return i !== id;
+    })
+
+  }
+  $scope.addL = function(){
+    $scope.list.push(Math.random())
+  }
+}])
+
+</script>
+</html>
+
+
+
+```

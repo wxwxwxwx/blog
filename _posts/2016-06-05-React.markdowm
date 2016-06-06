@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "Angular.js 简述"
+date:   2016-06-03 08:18:02 +0700
+categories: jekyll update
+---
+
+
+# React是一个JavaScript库,用于构建用户界面。
+
+
+
+虚拟DOM:DOM和你进行了抽象,因此react提供一个更简单的编程模型和更好的性能。react还可以呈现在服务器上使用节点,它可以使用本地react力量本地应用。
+
+数据流:实现单向react活性数据流减少样板和更容易思考比传统数据绑定。
