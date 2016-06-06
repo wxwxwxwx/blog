@@ -257,3 +257,26 @@ aa.directive('uqTitle',function(){
 ```
 
 # 路由
+
+```html
+
+aa.config(['$routeProvider','$locationProvider',function($routeProvider,$locationProvider){
+    $routeProvider.when('/',{
+      controller:'indexCtrl',
+      templateUrl:'views/weixin.html'
+    }).when('/weixin',{
+      controller:'weixinCtrl',
+      templateUrl:'views/weixin.html',
+    }).when('/tongxunlu',{
+      controller:'tongxunluCtrl',
+      templateUrl:'views/tongxunlu.html',
+    }).when('/find',{
+      controller:'findCtrl',
+      templateUrl:'views/find.html',
+    })
+    .otherwise({
+      redirectTo:'/'
+    })
+  }])
+
+```
