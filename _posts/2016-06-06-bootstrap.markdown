@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "html/css一些常见问题总结"
+title:  "bootstrap"
 date:   2016-06-03 08:18:02 +0700
 categories: jekyll update
 ---
