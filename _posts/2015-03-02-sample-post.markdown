@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "About jekyll"
-date:   2016-06-01 12:40:02 +0700
+date:   2015-03-02 12:40:02 +0700
 categories: jekyll update
 ---
 

@@ -1,0 +1,90 @@
+---
+layout: post
+title:  "canvas"
+date:   2016-06-03 08:18:02 +0700
+categories: jekyll update
+---
+
+
+
+# canvas
+```html
+  <canvas id="canvas" width="300" height="300"></canvas>
+  var cav = querySelector('#canvas');
+
+```
+
+画布的编程模式
+先清除，再重绘；
+
+## 获取
+
+
+## 形状
+
+> 所有stroke为线
+
+> 矩形
+
+* ctx.fillRect(x,y,width,height)填充矩形
+* ctx.strokeRect()框线矩形
+
+> 圆
+
+* ctx.arc(x,y,)
+* ctx.arcTo()
+
+> 线
+
+* ctx.beginPath()开始一个路径
+* ctx.moveTo()移动比来到开始的某点
+* ctx.lineTo()让路径中拥有一条到某点的线，但是并不会直接绘制出来
+* ctx.rect()让路径中拥有一个矩形，但是并不会直接绘制出来
+* ctx.fill()填充当前路径
+* ctx.stroke()描边
+* ctx.closePath()结束一个路径
+
+> 基线
+
+* ctx.quadraticCurveTo(cp1x,cp1y,x,y)
+二次贝塞尔
+* ctx.bezierCurveTo(cp1x,cp1y,cp2x,x,y)
+三次贝塞尔
+
+> 从画布中清除矩形区域
+
+* ctx.clearRect()
+画布的特点是绘制的元素无法更改；
+清理画布的两种方式；
+1.重设画布宽高；
+1.使用ctx.clearRect()
+
+
+## 样式
+
+* ctx.fillStyle();可设置三种格式的颜色；
+* ctx.strokeStyle();
+* ctx.globalAlpha()全局透明度
+* ctx.lineWidth;
+* ctx.lineCap;
+* ctx.lineJoin;
+* ctx.miterlimit;
+* ctx.getLineDash();
+* ctx.setLineDash();
+* ctx.lineDashoffset()
+
+* ctx.createLinearGradient();
+* ctx.createRadialGradient();
+* ctx.shadowdOffsetX
+* ctx.shadowOffsetY
+*
+*
+
+
+
+## 位移
+
+* ctx.save()
+* ctx.restore()
+* ctx.translate()
+* ctx.rotate()
