@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "javascript"
-date:   2016-06-03 08:18:02 +0700
+date:   2015-05-29 14:09:02 +0700
 categories: jekyll update
 ---
 

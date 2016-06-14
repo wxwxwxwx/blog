@@ -1,11 +1,11 @@
 ---
 layout: post
 title:  "fullpage"
-date:   2016-06-03 08:18:02 +0700
+date:   2016-01-28 22:35:02 +0700
 categories: jekyll update
 ---
 
- [fullpage](https://github.com/alvarotrigo/fullPage.js)
+ [fullpage官方文档](https://github.com/alvarotrigo/fullPage.js)
 
 
 
