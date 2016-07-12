@@ -1,0 +1,22 @@
+---
+layout: post
+title:  "study vue"
+date:   2016-07-10 12:40:02 +0700
+categories: jekyll update
+---
+
+
+[vue官方文档](http://cn.vuejs.org)
+
+# vue安装
+
+$ npm install vue
+
+# 大型单页面应用
+$ npm install -g vue-cli
+# 创建一个基于 "webpack" 模板的新项目
+$ vue init webpack my-project
+# 安装依赖，走你
+$ cd my-project
+$ npm install
+$ npm run dev
